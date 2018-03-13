@@ -1,0 +1,38 @@
+page-accept-order {
+
+}
+
+.content{ 
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.order-details{
+   &.submitted{
+        opacity: 0.1;
+    }
+}
+
+.blank-slate{
+    height: 100%; width: 100%;
+    justify-content: center;
+    color: #dadada;
+    .icon{
+        font-size: 3em;
+        padding: 0.1em;
+    }
+}
+
+.submission-results{
+    position: absolute; 
+    width: 100%;
+    text-align: center;
+    h1{ text-transform: uppercase; }
+    .icon { font-size: 5em; }
+
+    .blank { color: #f4f4f4}
+    .success{ color: #32db64; }
+    .failed { color: #f53d3d; }
+}
+

@@ -1,0 +1,16 @@
+<ion-header>
+  <hangry-navbar title="HANGRY"></hangry-navbar>
+</ion-header>
+
+<ion-content> 
+  <ion-list>
+    <ion-item *ngFor="let category of categories" (click)="selectCategory(category.tabId)">
+      {{ category.displayName }} 
+      <ion-badge item-end>{{category.count}}</ion-badge>
+    </ion-item>  
+  </ion-list> 
+   
+  <h3 padding-left>Kitchen Overview</h3>
+  <order-list listTitle="Newly Accepted Orders" [orders]="queued"></order-list>
+  <order-list listTitle="Preparing" [orders]="preparing"></order-list>
+</ion-content>

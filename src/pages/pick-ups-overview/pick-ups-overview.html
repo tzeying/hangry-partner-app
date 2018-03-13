@@ -1,0 +1,18 @@
+<ion-header>
+    <hangry-navbar title="HANGRY"></hangry-navbar>
+  </ion-header>
+  
+<ion-content padding>
+
+  <ion-grid padding margin-bottom class="status-controls">
+    <h5 no-margin col-12>Enter Secure Pick-up Code</h5>
+    <ion-row align-items-center justify-content-between>
+      <ion-item col-8>
+          <ion-input type="text" placeholder="Pick-up Code" [(ngModel)]="code"></ion-input>
+      </ion-item>
+      <button ion-button col-3 (click)="verifyCode(code)">Verify</button>
+    </ion-row>
+  </ion-grid>
+
+  <order-list padding-top [orders]="pickups"></order-list>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Order Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <order-summary [customerName]="order?.customerName" [timeRemaining]="order?.timeRemaining"></order-summary>
+  <order-details [status]="order?.status"></order-details>
+
+  <ion-grid padding margin-top class="status-controls">
+    <ion-row align-items-center justify-content-between>
+      <h5 no-margin>Start preparing order</h5>
+      <ion-toggle checked="false"></ion-toggle>
+    </ion-row>
+  </ion-grid>
+</ion-content>

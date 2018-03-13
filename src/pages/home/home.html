@@ -1,0 +1,6 @@
+<ion-tabs #myTabs>
+  <ion-tab [root]="ordersManagementPage" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab [tabBadge]="pendingOrdersCount" tabBadgeStyle="danger" [root]="acceptOrderPage" tabTitle="Accept" tabIcon="alert"></ion-tab>
+  <ion-tab [root]="pickupsPage" tabTitle="Pick-up" tabIcon="bicycle"></ion-tab>
+  <ion-tab [root]="kitchenPage" tabTitle="Kitchen" tabIcon="restaurant"></ion-tab>
+</ion-tabs>

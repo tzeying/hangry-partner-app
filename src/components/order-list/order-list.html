@@ -1,0 +1,9 @@
+<ion-list>
+  <ion-list-header>{{listTitle}}</ion-list-header>
+  <ion-item *ngFor="let order of orders" (click)="openOrderDetails(order.id, order.status)">
+    <h2 item-left>{{order.timeRemaining}}mins</h2>
+    <h2>{{order.customerName}}</h2>
+    <p>{{order.totalItems}} Items: ${{order.price}}</p>
+    <button ion-button clear item-end class="status" [ngClass]="order.status">{{order.status}}</button>
+  </ion-item>
+</ion-list>

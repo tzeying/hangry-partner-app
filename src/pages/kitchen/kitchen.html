@@ -1,0 +1,9 @@
+<ion-header>
+  <hangry-navbar title="HANGRY"></hangry-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 padding-left>Kitchen</h3>
+  <order-list listTitle="New Items" [orders]="queued"></order-list>
+  <order-list listTitle="Preparing" [orders]="preparing"></order-list>
+</ion-content>

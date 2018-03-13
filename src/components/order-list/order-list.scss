@@ -1,0 +1,14 @@
+order-list {
+
+}
+
+.status{
+    font-weight: bold;
+    text-transform: uppercase;
+    &.pending { color: #F5A623; }
+    &.preparing{ color: #4A90E2; }
+    &.queued { color: #000000; }
+    &.pickup { color: #417505; }
+    &.completed { color: #4A4A4A; }
+    &.cancelled, &.expired {color: #9B9B9B; }
+}
